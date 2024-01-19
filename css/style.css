@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    --font-family: 'Libre Franklin', sans-serif;
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --submit-button-background: hsl(271, 36%, 24%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4%; /* Adjust padding for responsiveness */
+}
+
+h1 {
+    color: var(--Gray);
+    font-weight: 800;
+    text-align: center;
+}
+
+span {
+    color: var(--Very-Dark-Blue);
+}
+
+input {
+    padding: 2% !important; /* Adjust padding for responsiveness */
+    border-radius: 40px !important;
+}
+
+button {
+    background-color: var(--Blue) !important;
+    color: white !important;
+    padding: 2% !important; /* Adjust padding for responsiveness */
+    border-radius: 40px !important;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%; /* Adjust margin for spacing */
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 50%;
+    width: 4vw; /* Adjust width for responsiveness */
+    height: 4vw; /* Adjust height for responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%; /* Adjust margin for spacing */
+}
+
+li:hover {
+    background-color: var(--Blue);
+}
+
+i {
+    color: var(--Blue);
+}
+
+i:hover {
+    color: white;
+    font-size: large;
+}
+
+.copy {
+    color: var(--Gray);
+    text-align: center;
+}
+.illustror {
+    width: 100%;
+}
+#error {
+    color: red;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */
